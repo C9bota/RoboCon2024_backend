@@ -30,10 +30,10 @@ def item_list(request):
     return render(request, 'item_list.html', {'items': items})
 
 
-# def completed_purchace(request):
-#     if request.method == 'POST':
+def completed_purchace(request):
+     if request.method == 'POST':
         
-#         return render(request, 'item_list.html')
+         return render(request, 'item_list.html')
     
 
 def check(request):
