@@ -32,7 +32,7 @@ def item_list(request):
     return render(request, 'item_list.html', {'items': items})
 
 
-def completed_purchase(request):
+def completed_purchace(request):
     if request.method == 'POST':
         
         return render(request, 'item_list.html')
