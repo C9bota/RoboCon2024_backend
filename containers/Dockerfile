@@ -5,6 +5,8 @@ ENV PYTHONUNBUFFERED 1
 RUN mkdir -p /home/workspace
 COPY requirements.txt /home/workspace/
 COPY src /home/workspace
+COPY .env /home/workspace
+COPY docker-compose.yml /home/workspace
 WORKDIR /home/workspace
 
 RUN pip install --upgrade pip \
