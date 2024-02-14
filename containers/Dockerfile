@@ -9,8 +9,6 @@ RUN ls -la /home
 
 COPY containers/requirements.txt /home/workspace/
 COPY src /home/workspace/src
-COPY .env /home/workspace
-COPY docker-compose.yml /home/workspace
 
 # 作成したディレクトリを表示して確認
 RUN ls -la /home/workspace/
