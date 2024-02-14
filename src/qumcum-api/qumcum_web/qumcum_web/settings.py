@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-9!t&)6ddb7f9j8x((%&6i@wocot)o3j^i7yk#qf8l-yl_rpm^6
 DEBUG = True
 
 # 環境変数からALLOWED_HOSTSを取得し、カンマで区切られた文字列として指定
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost').split(',')
+ALLOWED_HOSTS =  ['roboconwebapps.azurewebsites.net']
 
 # Application definition
 
