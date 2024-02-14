@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('item-list/', item_list, name='item_list'),
-    path('completed_purchase/', completed_purchase, name='completed_purchase'),
+    path('completed_purchace/', completed_purchace, name='completed_purchace'),
     path('purchase_status', purchase_status, name='purchase_status'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
