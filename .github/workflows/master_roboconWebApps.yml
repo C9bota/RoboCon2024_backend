@@ -22,7 +22,7 @@ jobs:
     - name: Log in to registry
       uses: docker/login-action@v2
       with:
-        registry: https://roboconback.azurecr.io/
+        registry: 'roboconback.azurecr.io'
         username: ${{ secrets.AzureAppService_ContainerUsername_b0e21e84ad124f8aae33e7f4a14e1b75 }}
         password: ${{ secrets.AzureAppService_ContainerPassword_9c3eed55e0ab471e8219e5541b99f1e1 }}
 
