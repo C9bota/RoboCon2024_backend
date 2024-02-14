@@ -3,7 +3,7 @@ FROM python:3.9.11
 ENV PYTHONUNBUFFERED 1
 
 RUN mkdir -p /home/workspace
-COPY requirements.txt /home/workspace/
+COPY containers/requirements.txt /home/workspace/
 COPY src /home/workspace
 COPY .env /home/workspace
 COPY docker-compose.yml /home/workspace
