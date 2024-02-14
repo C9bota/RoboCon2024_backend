@@ -31,7 +31,7 @@ jobs:
       with:
         push: true
         tags: roboconback.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b0e21e84ad124f8aae33e7f4a14e1b75 }}/backend:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./containers/Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
