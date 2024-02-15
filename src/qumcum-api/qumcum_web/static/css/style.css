@@ -40,7 +40,7 @@ body {
     margin-bottom: 3px;
   }
 
-　.m_column li {
+  .m_column li {
     width: calc(33.3333% - 20px);
     text-align: center;
   }
@@ -64,7 +64,7 @@ body {
   /* type="number"のinput要素にだけスタイルを適用する例 */
   input[type="number"] {
     width: 70px;
-    height: 40px;
+    height: 20px;
   }
 
   .div_purchase_total {
