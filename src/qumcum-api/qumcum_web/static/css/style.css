@@ -48,8 +48,8 @@ body {
     margin-left: 10px;
     margin-bottom: -10px;
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border: 1px solid #ddd;
     object-fit: fill;
   }
@@ -66,6 +66,7 @@ body {
   .div_purchase_total {
     text-align: center;
     padding: 1em;
+    font-size: 120%;
   }
 
   /* .div_purchase_Button {
@@ -73,6 +74,8 @@ body {
   } */
 
   .purchase_Button {
+    width: 10em;
+    height: 3em;
     text-align: center;
     padding: 1em;
     /* padding: 10px 30px; パディングを追加 */
