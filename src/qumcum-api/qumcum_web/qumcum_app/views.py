@@ -41,7 +41,7 @@ def completed_purchace(request):
 def purchase_status(request):
     global purchase_flag
     #if request.method == 'POST':
-    if purchase_flag == True:
+    if purchase_flag:
         tmp_purchase_flag = purchase_flag
         purchase_flag = False
         return JsonResponse({'purchase_flag':tmp_purchase_flag})
