@@ -14,10 +14,6 @@ body {
     text-align: center;
     padding: 1em;
   }
-
-  .m_column {
-    text-align: center;
-  }
   
   #column ul {
     width: calc(100 + 20px);
@@ -29,17 +25,24 @@ body {
   #column li {
     list-style:none;
     padding: 0 10px 20px;
+    text-align: center;
   }
   
   #column li p {
     font-size: 120%;
     margin-bottom: 3px;
+    text-align: center;
   }
   
   #column li span {
     font-size: 120%;
     display: block;
     margin-bottom: 3px;
+  }
+
+　.m_column li{
+    width: calc(33.3333% - 20px);
+    text-align: center;
   }
 
   img {
