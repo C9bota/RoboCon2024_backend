@@ -7,7 +7,7 @@ from qumcum_app.models import Item
 import json
 from django.http.response import JsonResponse
 
-purchase_flag = 'false'
+purchase_flag = False
 
 def index(request):
     return HttpResponse("Hello, World!")
@@ -26,7 +26,7 @@ def item_list(request):
             total_price += item.price * item.quantity
         
         if total_price > 0:
-            purchase_flag = 'true'
+            purchase_flag = True
             return render(request, 'completed_purchace.html')
             
     return render(request, 'item_list.html', {'items': items})
@@ -41,9 +41,9 @@ def completed_purchace(request):
 def purchase_status(request):
     global purchase_flag
     #if request.method == 'POST':
-    if purchase_flag == 'true':
+    if purchase_flag == True:
         tmp_purchase_flag = purchase_flag
-        purchase_flag = 'false'
+        purchase_flag = False
         return JsonResponse({'purchase_flag':tmp_purchase_flag})
     else:
         return JsonResponse({'purchase_flag':purchase_flag})
