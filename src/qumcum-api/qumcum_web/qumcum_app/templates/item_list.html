@@ -90,7 +90,8 @@
         <div class="div_purchase_total">
             <p id="total">合計金額: 0 円</p>
         <div>
-        
+
+        {% csrf_token %}
         <div class="div_purchase_Button">
             <button type="submit" class="purchase_Button">購入</button>
         </div>
